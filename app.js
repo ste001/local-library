@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb+srv://stefano:<acLb01p9tKooVhtS>@cluster0-uf1qi.mongodb.net/local_library?retryWrites=true';
+var mongoDB = 'mongodb+srv://stefano:acLb01p9tKooVhtS@cluster0-uf1qi.mongodb.net/local_library?retryWrites=true';
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error'));
